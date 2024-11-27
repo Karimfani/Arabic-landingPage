@@ -1,0 +1,389 @@
+@font-face {
+    font-family: maghfira;
+    src: url("/assets/fonts/RTL-Maghfira-Ramadan.woff");
+}
+
+* {
+    font-family: maghfira,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    scroll-behavior: smooth;
+    line-height: 1.5em;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: -4.5%;
+    height: 17vh;
+}
+
+.menu > a {
+    color: black;
+    text-decoration: none;
+    padding-left: 50px;
+    font-size: 26px;
+}
+
+.slider {
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.topNews > img {
+    width: 550px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50px;
+    box-shadow: 0px 5px 15px #000;
+    animation: float 6s ease-in-out infinite;
+}
+
+.featuredNews {
+    display: grid;
+    gap: 9%;
+}
+
+.bottomNews {
+    display: flex;
+    gap: 8%;
+    }
+
+    .bottomNews > img {
+        height: 250px;
+        width: 250px;
+        object-fit: cover;
+        box-shadow: 0px 5px 15px #000;
+        border-radius: 50px;
+        animation: float 6s ease-in-out infinite;
+    }
+
+.magazines {
+    height: 900px;
+    width: 100%;
+    display: grid;
+    justify-content: space-around;
+    align-content: space-evenly;
+    background-color: #f7f7f7;
+    background-image: url("/assets/img/whiteBackground.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.magazinesCarousel {
+    display: flex;
+    width: 70%;
+    justify-self: center;
+    padding: 0 1%;
+    gap: 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.magthumbnails > img {
+    width: 297px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 5%;
+    box-shadow: 0px 5px 15px #000;
+    margin-top: 4%;
+    margin-right: 4%;
+    margin-left: 6%;
+}
+
+.magthumbnails {
+    position: relative;
+    margin-bottom: 7%;
+}
+
+.titleMag {
+    display: flex;
+    width: 70%;
+    font-size: 32px;
+    text-decoration: underline;
+    justify-self: center;
+    text-decoration-color: #ff0000;
+    text-decoration-thickness: 10px;
+    text-decoration-skip-ink: none;
+    text-underline-offset: -2px;
+}
+
+.magazinesCarousel::-webkit-scrollbar {
+    height: 10px; /* width of the entire scrollbar */
+}
+
+.magazinesCarousel::-webkit-scrollbar-track {
+    background: #000; /* color of the tracking area */
+}
+
+.magazinesCarousel::-webkit-scrollbar-thumb {
+    background-color: red; /* color of the scroll thumb */
+}
+
+.lastNews {
+    height: 900px;
+    width: 100%;
+    display: grid;
+    justify-content: space-around;
+    align-content: space-evenly;
+    background-color: white;
+    background-image: url(/assets/img/greyBackground.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contacForm {
+    display: flex;
+    height: 825px;
+    background-color: #f7f7f7;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(/assets/img/bird.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 74%;
+}
+
+.Form {
+    margin-right: 16.5%;
+    display: grid;
+    width: 75%;
+}
+.formTop {
+    display: flex;
+    gap: 20%;
+    margin-left: 14%;
+}
+
+.Form > textarea {
+    color: #a4a4a4;
+    font-size: 30px;
+    padding-right: 73px;
+    border: none;
+    width: 66%;
+    border-radius: 20px;
+    height: 235px;
+    resize: none;
+}
+textarea::placeholder {
+    color: #a4a4a4;
+}
+.mail > .titleMag {
+    margin-bottom: 5%;
+}
+.name > .titleMag{
+    margin-bottom: 5%;
+}
+.Form > button {
+    width: 240px;
+    height: 64px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color: red;
+    font-size: 25px;
+    margin-top: 3%;
+}
+
+.formImg {
+    background-image: url(/assets/img/FormImage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20em;
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+}
+
+.socialMediaIcons > img {
+    width: 65%;
+    display: inline;
+}
+.Form > .titleMag {
+    width: 100%;
+    margin-top: 8%;
+    margin-bottom: 2%;
+}
+input[type="text"] {
+    color: #a4a4a4;
+    font-size: 22px;
+    padding-right: 7%;
+    border: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+}
+.title {
+    font-size: 24px;
+    font-weight: 100;
+    color: white;
+}
+
+.summaryOfArticle {
+    font-size: 14px;
+    color: white;
+    width: 260px;
+    text-align: justify;
+}
+
+.date, .Author {
+    font-size: 12px;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 2px;
+    text-decoration-skip-ink: none;
+    padding-right: 3.5%;
+}
+
+.Author {
+    padding-right: 0;
+    padding-left: 3.5%;
+}
+
+.bottomSec {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.articleInfo {
+    display: none;
+}
+
+.magthumbnails:hover .articleInfo {
+    display: block;
+    animation-name: example;
+    min-height: 228px;
+    animation-duration: .2s;
+    display: grid;
+    gap: 45px;
+    position: absolute;
+    top: 53%;
+    right: 8%;
+    backdrop-filter: blur(20px);
+    padding: 2%;
+    border-radius: 20px;
+    background: linear-gradient(to top, rgb(0 0 0 / 25%) 0%, rgba(0, 0, 0, 0) 40%);
+}
+
+@keyframes example {
+    0% {
+        top: 100%;
+    }
+
+    100% {
+        top: 50%;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-10px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .featuredNews {
+        justify-items: center;
+        margin-bottom: 16%;
+    }
+    .topNews > img {
+        width: 352px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    .bottomNews {
+        gap: 8%;
+    }
+    .bottomNews > img {
+        height: 175px;
+        width: 175px;
+        border-radius: 15px;
+    }
+    img.badge {
+        width: 70%;
+    }
+    .sliderbadge {
+        display: grid;
+        justify-items: center;
+    }
+    .slider {
+        display: grid;
+        min-height: 80vh;
+    }
+    .menu {
+        display: none;
+    }
+    .magazinesCarousel {
+        width: 80%;
+    }
+    .magthumbnails > img {
+        height: 450px;
+        border-radius: 20px;
+    }
+    .contacForm {
+        height: 83dvh;
+        justify-content: space-around;
+        background-size: 270%;
+    }
+    .Form {
+        margin-right: 0%;
+        width: 87%;
+        gap: 5%;
+    }
+    .titleMag {
+        font-size: 25px;
+        text-decoration-thickness: 4px;
+        text-underline-offset: 2px;
+    }
+    input[type="text"] {
+        font-size: 15px;
+    }
+    .Form > textarea {
+        font-size: 20px;
+        padding-right: 22px;
+        width: 85%;
+        border-radius: 15px;
+    }
+    .Form > button {
+        display: flow;
+        justify-self: center;
+    }
+    .formImg{
+        display:none;
+    }
+
+    }
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
